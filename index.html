@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Top Down Shooter</title>
+    <script>
+      document.write('<base href="' + location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') +'">');
+    </script>
+    <link rel="stylesheet" type="text/css" href="/app/theme/app.css">
+    <script src="/node_modules/core-js/client/shim.min.js"></script>
+    <script src="/node_modules/createjs-easeljs/lib/easeljs-0.8.2.min.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err) {
+        console.error(err);
+      });
+    </script>
+  </head>
+  <body>
+    <canvas id="Game" width="400" height="400"></canvas>
+  </body>
+</html>
